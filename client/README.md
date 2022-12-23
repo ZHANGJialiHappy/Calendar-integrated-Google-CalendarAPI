@@ -5,7 +5,9 @@
     c. Creating credentials\
     d. Adding scopes
 2. Frontend React \
-    a. Install [`React OAuth2 | Google`](https://www.npmjs.com/package/@react-oauth/google)
+    a. Install [`React OAuth2 | Google`](https://www.npmjs.com/package/@react-oauth/google)\
+    b. Decode credential by [`jwt-decode`](https://www.npmjs.com/package/jwt-decode)
+
 
 # Getting Started with Create React App
 
