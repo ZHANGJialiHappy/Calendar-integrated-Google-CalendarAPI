@@ -1,12 +1,12 @@
 # Steps
-1. Setting  [`Google API`](https://developers.google.com/calendar/api/quickstart/nodejs)
-    a. Oauth Consent Screen
-    b. Enabling APIs
-    c. Creating credentials
-    d. Adding scopes
-2. Frontend React 
-    a. Install [`React OAuth2 | Google`] (https://www.npmjs.com/package/@react-oauth/google)
-    
+1. Setting  [`Google API`](https://developers.google.com/calendar/api/quickstart/nodejs).\
+    a. Oauth Consent Screen\
+    b. Enabling APIs\
+    c. Creating credentials\
+    d. Adding scopes\
+2. Frontend React \
+    a. Install [`React OAuth2 | Google`](https://www.npmjs.com/package/@react-oauth/google)\
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
