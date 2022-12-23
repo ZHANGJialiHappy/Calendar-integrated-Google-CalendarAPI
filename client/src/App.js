@@ -1,6 +1,5 @@
 import './App.css';
 import { GoogleLogin } from '@react-oauth/google';
-import { googleLogout } from '@react-oauth/google';
 import jwt_decode from "jwt-decode";
 
 function App() {
