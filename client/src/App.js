@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Authentication } from './features/Authentication';
+import { Authentication } from './features/authentication/Authentication';
 import { MyCalendar } from './features/MyCalendar';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
