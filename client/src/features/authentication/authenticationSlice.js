@@ -1,15 +1,21 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
+ const initialState = {
+    email: "",
+    familyName: "",
+    givenName: "",
+ } 
 export const authenticationSlice = createSlice({
   name: 'authentication',
-  initialState: {
-    
-  },
+  initialState,
   reducers: {
+    authentication: (state, action) => {
+        state = action.payload;
+    }
 
   },
 })
 
-export const { } = authenticationSlice.actions
-
-export default authenticationSlice.reducer
+export const getUser=(state) => state.authentication;
+export const { authentication } = authenticationSlice.actions;
+export default authenticationSlice.reducer;
