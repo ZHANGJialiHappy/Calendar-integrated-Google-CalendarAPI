@@ -1,12 +1,13 @@
 import { GoogleLogin } from '@react-oauth/google';
 import { useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode";
-import { useDispatch } from "react-redux";
-import { authentication as save } from "./authenticationSlice"; 
+import { useDispatch, useSelector } from "react-redux";
+import { authentication, getUser } from "./authenticationSlice";
 
-export const Authentication = ()=> {
+export const Authentication = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const user = useSelector(getUser);
   return (
     <div>
       <GoogleLogin
@@ -14,7 +15,11 @@ export const Authentication = ()=> {
           console.log(credentialResponse.credential);
           var decoded = jwt_decode(credentialResponse.credential);
           console.log(decoded);
-          dispatch(save);
+          dispatch(authentication({
+            email: decoded.email,
+            familyName: decoded.family_name,
+            givenName: decoded.given_name,
+          }));
           navigate('/calendar');
         }}
         onError={() => {

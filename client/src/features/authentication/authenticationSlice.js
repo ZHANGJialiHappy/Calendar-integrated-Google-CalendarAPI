@@ -10,7 +10,9 @@ export const authenticationSlice = createSlice({
   initialState,
   reducers: {
     authentication: (state, action) => {
-        state = action.payload;
+        state.email = action.payload.email;
+        state.familyName = action.payload.familyName;
+        state.givenName = action.payload.givenName;
     }
 
   },
