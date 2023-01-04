@@ -8,6 +8,8 @@
     a. Install [`React OAuth2 | Google`](https://www.npmjs.com/package/@react-oauth/google)\
     b. Decode credential by [`jwt-decode`](https://www.npmjs.com/package/jwt-decode)
 3. Redux
+    a. createSlice
+    b. createAsyncThunk
 
 
 # Getting Started with Create React App
