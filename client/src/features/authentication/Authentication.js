@@ -12,11 +12,14 @@ export const Authentication = () => {
     <div>
       <GoogleLogin
         onSuccess={credentialResponse => {
+          console.log(credentialResponse)
           const decoded = jwt_decode(credentialResponse.credential);
+          console.log(decoded)
           dispatch(authentication({
             email: decoded.email,
             familyName: decoded.family_name,
             givenName: decoded.given_name,
+            token: credentialResponse.credential,
           }));
           navigate('/calendar');
         }}
